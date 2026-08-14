@@ -50,9 +50,8 @@
   <meta name="citation_conference_title" content="European Conference on Computer Vision (ECCV)">
   <meta name="citation_pdf_url" content="https://4d-vision-uom.github.io/static/pdfs/paper.pdf">
   
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
+  <!-- Additional SEO & Apple Status Bar -->
+  <meta name="theme-color" content="#0071e3">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   
@@ -60,9 +59,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
 
   <title>CL4D: Contrastive Language–4D Pretraining for Vision-Language Reasoning in Dynamic Scenes</title>
   
@@ -70,17 +67,16 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌏</text></svg>">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌏</text></svg>">
   
-  <!-- Critical CSS - Load synchronously -->
+  <!-- Critical CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
   
-  <!-- Non-critical CSS - Load asynchronously -->
+  <!-- Non-critical CSS -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -88,12 +84,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
   
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Apple SF Pro / Inter Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
+  <!-- KaTeX for Math Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
@@ -110,58 +110,37 @@
       {
         "@type": "Person",
         "name": "Kumal Hewagamage",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Moratuwa"
-        }
+        "affiliation": { "@type": "Organization", "name": "University of Moratuwa" }
       },
       {
         "@type": "Person",
         "name": "Isuranga Senavirathne",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Moratuwa"
-        }
+        "affiliation": { "@type": "Organization", "name": "University of Moratuwa" }
       },
       {
         "@type": "Person",
         "name": "Sasika Amarasinghe",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Moratuwa"
-        }
+        "affiliation": { "@type": "Organization", "name": "University of Moratuwa" }
       },
       {
         "@type": "Person",
         "name": "Hasitha Gallella",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Moratuwa"
-        }
+        "affiliation": { "@type": "Organization", "name": "University of Moratuwa" }
       },
       {
         "@type": "Person",
         "name": "Dulanga Weerakoon",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Singapore-MIT Alliance for Research & Technology (SMART) Centre"
-        }
+        "affiliation": { "@type": "Organization", "name": "Singapore-MIT Alliance for Research & Technology (SMART) Centre" }
       },
       {
         "@type": "Person",
         "name": "Vigneshwaran Subbaraju",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Agency for Science, Technology and Research (A*STAR)"
-        }
+        "affiliation": { "@type": "Organization", "name": "Agency for Science, Technology and Research (A*STAR)" }
       },
       {
         "@type": "Person",
         "name": "Ranga Rodrigo",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Moratuwa"
-        }
+        "affiliation": { "@type": "Organization", "name": "University of Moratuwa" }
       }
     ],
     "datePublished": "2026-03-01",
@@ -171,504 +150,434 @@
     },
     "url": "https://4d-vision-uom.github.io/",
     "image": "https://4d-vision-uom.github.io/static/images/teaser.png",
-    "keywords": ["4D Vision", "Contrastive Learning", "Point Clouds", "Vision Language Models", "Spatio-Temporal Reasoning"],
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://4d-vision-uom.github.io/"
-    }
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "4D Vision UoM Lab",
-    "url": "https://4d-vision-uom.github.io/",
-    "logo": "https://4d-vision-uom.github.io/static/images/favicon.ico"
+    "keywords": ["4D Vision", "Contrastive Learning", "Point Clouds", "Vision Language Models", "Spatio-Temporal Reasoning"]
   }
   </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
+  <!-- Floating Glass Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown (Disabled since there are no other works to display) -->
-  <!--
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        ...
-      </div>
-    </div>
-  </div>
-  -->
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">CL4D: Contrastive Language–4D Pretraining for Vision-Language Reasoning in Dynamic Scenes</h1>
-            
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/kumal-hewagamage/" target="_blank">Kumal Hewagamage</a><sup>1*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/isuranga-senavirathne/" target="_blank">Isuranga Senavirathne</a><sup>1*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/sasika-amarasinghe/" target="_blank">Sasika Amarasinghe</a><sup>1*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/hasitha-gallella/" target="_blank">Hasitha Gallella</a><sup>1*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=WK3bdIwAAAAJ&amp;hl=en" target="_blank">Dulanga Weerakoon</a><sup>2†</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=a-XmypoAAAAJ&amp;hl=en" target="_blank">Vigneshwaran Subbaraju</a><sup>3†</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=YaEJbvYAAAAJ&amp;hl=en" target="_blank">Ranga Rodrigo</a><sup>1†</sup>
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Moratuwa, Sri Lanka</span><br>
-              <span class="author-block"><sup>2</sup>Singapore-MIT Alliance for Research & Technology (SMART) Centre, Singapore</span><br>
-              <span class="author-block"><sup>3</sup>Agency for Science, Technology and Research (A*STAR), Singapore</span><br>
-              <span class="author-block"><strong><a href="https://eccv.ecva.net/" target="_blank">ECCV 2026</a></strong></span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution &nbsp;&nbsp; <sup>†</sup>Indicates Joint Supervision</small></span>
-            </div>
-
+  
+    <!-- Hero Header Section -->
+    <section class="hero publication-header fade-up">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
             <div class="column has-text-centered">
+              <h1 class="publication-title">CL4D: Contrastive Language–4D Pretraining for Vision-Language Reasoning in Dynamic Scenes</h1>
+              
+              <div class="publication-authors">
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/kumal-hewagamage/" target="_blank">Kumal Hewagamage</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/isuranga-senavirathne/" target="_blank">Isuranga Senavirathne</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/sasika-amarasinghe/" target="_blank">Sasika Amarasinghe</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/hasitha-gallella/" target="_blank">Hasitha Gallella</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=WK3bdIwAAAAJ&amp;hl=en" target="_blank">Dulanga Weerakoon</a><sup>2†</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=a-XmypoAAAAJ&amp;hl=en" target="_blank">Vigneshwaran Subbaraju</a><sup>3†</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=YaEJbvYAAAAJ&amp;hl=en" target="_blank">Ranga Rodrigo</a><sup>1†</sup>
+                </span>
+              </div>
+
+              <div class="publication-authors">
+                <span class="author-block"><sup>1</sup>University of Moratuwa, Sri Lanka</span><br>
+                <span class="author-block"><sup>2</sup>Singapore-MIT Alliance for Research & Technology (SMART) Centre, Singapore</span><br>
+                <span class="author-block"><sup>3</sup>Agency for Science, Technology and Research (A*STAR), Singapore</span><br>
+                <span class="publication-venue">ECCV 2026</span>
+                <div class="eql-cntrb"><sup>*</sup>Indicates Equal Contribution &nbsp;&nbsp; <sup>†</sup>Indicates Joint Supervision</div>
+              </div>
+
+              <!-- Action Links (Apple Pill Buttons) -->
               <div class="publication-links">
-                
-                <!-- Paper Link -->
                 <span class="link-block">
-                  <a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
+                  <a href="static/pdfs/paper.pdf" target="_blank" class="button is-dark btn-primary">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
                     <span>Paper</span>
                   </a>
                 </span>
 
-                <!-- Supplementary Link -->
                 <span class="link-block">
-                  <a href="static/pdfs/supplementary.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
+                  <a href="static/pdfs/supplementary.pdf" target="_blank" class="button is-dark btn-primary">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
                     <span>Supplementary</span>
                   </a>
                 </span>
 
-                <!-- Code Link -->
                 <span class="link-block">
-                  <a href="https://github.com/4D-Vision-UoM/CL4D" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+                  <a href="https://github.com/4D-Vision-UoM/CL4D" target="_blank" class="button is-dark btn-primary">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
-                
               </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-<!-- Teaser Image -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/teaser.png" alt="CL4D Framework Overview" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 20px;" loading="lazy">
-      <h2 class="subtitle has-text-centered" style="font-size: 1.15rem; margin-top: 15px;">
-        <strong>Overview of the Language–4D framework:</strong> We introduce CL4D, a contrastive pre-training paradigm that bridges the gap between 4D sequences (dynamic point clouds) and natural language. <strong>(A) Contrastive Language-4D Pre-training</strong> aligns 4D sequences with text in a shared latent space via a multi-modal contrastive loss. <strong>(B) 4D Vision-Language Model (4DVLM)</strong> uses the learned representations for VLM downstream reasoning tasks (4D visual question answering).
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser image -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified" style="font-size: 1.1rem; line-height: 1.6;">
-          <p>
-            4D understanding and reasoning is a fundamental capability for embodied AI agents operating in dynamic physical environments. However, existing vision encoders are largely limited to static 2D images or 3D point clouds without temporal modeling, or to 2D videos that lack accurate geometric depth reasoning. Consequently, current approaches fail to jointly capture spatial structure and motion evolution in dynamic scenes. We present <strong>CL4D</strong>, the first foundational 4D vision encoder that directly operates on dynamic point clouds, trained with a contrastive learning objective to align spatio-temporal geometric representations with natural language descriptions. By learning a shared embedding space between text and 4D scene dynamics, CL4D enables zero-shot motion-to-text and text-to-motion retrieval in dynamic environments and serves as a foundational 4D vision encoder for downstream 4D vision–language tasks. Building on this encoder, we introduce <strong>4DVLM</strong>, a 4D vision–language model that conditions language generation on dynamic geometric representations. 4DVLM is the first VLM designed to operate directly on 4D point clouds without relying on 2D images, 2D videos, or static 3D point clouds. We train CL4D and subsequently 4DVLM on a newly constructed dataset termed <strong>DynAction4D</strong> capturing diverse human motions across varying object interactions and scene environments. Extensive experiments across multiple 4D human action benchmarks demonstrate that CL4D achieves state-of-the-art performance, with improvements of approximately ~16.75% over prior methods. Furthermore, 4DVLM outperforms frontier video VLMs such as Gemini and GPT-5 even when these models are provided with RGB video sequences corresponding to the same scenes represented as 4D point clouds for 4DVLM.
+    <!-- Teaser Card -->
+    <section class="teaser">
+      <div class="container is-max-desktop">
+        <div class="teaser-card fade-on-scroll">
+          <img src="static/images/teaser.png" alt="CL4D Framework Overview" loading="lazy">
+          <p class="teaser-caption">
+            <strong>Overview of the Language–4D framework:</strong> We introduce CL4D, a contrastive pre-training paradigm that bridges the gap between 4D sequences (dynamic point clouds) and natural language. <strong>(A) Contrastive Language-4D Pre-training</strong> aligns 4D sequences with text in a shared latent space via a multi-modal contrastive loss. <strong>(B) 4D Vision-Language Model (4DVLM)</strong> uses the learned representations for VLM downstream reasoning tasks (4D visual question answering).
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-<!-- DynAction4D Dataset Section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">DynAction4D Dataset</h2>
-        <div class="content has-text-justified">
-          <p>
-            To facilitate Language–4D representation learning, we introduce <strong>DynAction4D</strong>, a large-scale dynamic human action point cloud dataset. DynAction4D consists of four distinct segments, each capturing unique dynamic scenarios with paired natural language descriptions:
-          </p>
-          <ul>
-            <li><strong>HumanOnly:</strong> Captures a wide variety of human-only actions (walking, jumping, dancing, etc.) across diverse environments, featuring 23k training and 4k testing sequences.</li>
-            <li><strong>ObjInteractions:</strong> Focuses on human actions involving object interactions, derived from Humoto. Includes 73 objects and 736 distinct interaction types.</li>
-            <li><strong>Cluttered:</strong> Places human characters performing various actions in environments cluttered with multiple objects at varying placements and density conditions.</li>
-            <li><strong>4D-VQA:</strong> Specifically built for evaluating downstream 4D spatial and temporal reasoning capabilities, generated by prompting Gemini on Unity-rendered video sequences.</li>
-          </ul>
-        </div>
-        
-        <!-- Dataset Pipeline Figure -->
-        <div class="has-text-centered">
-          <img src="static/images/data_generation_pipeline.png" alt="DynAction4D Generation Pipeline" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-top: 15px; margin-bottom: 10px;" loading="lazy">
-          <p class="subtitle is-6">Overview of the DynAction4D data generation pipeline.</p>
-        </div>
-
-        <!-- Dataset Samples Side-by-Side -->
-        <div class="columns is-centered" style="margin-top: 20px;">
-          <div class="column is-half has-text-centered">
-            <img src="static/images/HumanML_dataset_samples.png" alt="HumanOnly Samples" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" loading="lazy">
-            <p class="subtitle is-6" style="margin-top: 5px;">(a) DynAction4D-HumanOnly samples.</p>
-          </div>
-          <div class="column is-half has-text-centered">
-            <img src="static/images/Humoto_dataset_samples.png" alt="ObjInteractions Samples" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" loading="lazy">
-            <p class="subtitle is-6" style="margin-top: 5px;">(b) DynAction4D-ObjInteractions samples.</p>
+    <!-- Paper Abstract Card -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="apple-card fade-on-scroll">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content">
+            <p>
+              4D understanding and reasoning is a fundamental capability for embodied AI agents operating in dynamic physical environments. However, existing vision encoders are largely limited to static 2D images or 3D point clouds without temporal modeling, or to 2D videos that lack accurate geometric depth reasoning. Consequently, current approaches fail to jointly capture spatial structure and motion evolution in dynamic scenes.
+            </p>
+            <p>
+              We present <strong>CL4D</strong>, the first foundational 4D vision encoder that directly operates on dynamic point clouds, trained with a contrastive learning objective to align spatio-temporal geometric representations with natural language descriptions. By learning a shared embedding space between text and 4D scene dynamics, CL4D enables zero-shot motion-to-text and text-to-motion retrieval in dynamic environments and serves as a foundational 4D vision encoder for downstream 4D vision–language tasks.
+            </p>
+            <p>
+              Building on this encoder, we introduce <strong>4DVLM</strong>, a 4D vision–language model that conditions language generation on dynamic geometric representations. 4DVLM is the first VLM designed to operate directly on 4D point clouds without relying on 2D images, 2D videos, or static 3D point clouds. We train CL4D and subsequently 4DVLM on a newly constructed dataset termed <strong>DynAction4D</strong> capturing diverse human motions across varying object interactions and scene environments.
+            </p>
+            <p>
+              Extensive experiments across multiple 4D human action benchmarks demonstrate that CL4D achieves state-of-the-art performance, with improvements of approximately ~16.75% over prior methods. Furthermore, 4DVLM outperforms frontier video VLMs such as Gemini and GPT-5 even when these models are provided with RGB video sequences corresponding to the same scenes represented as 4D point clouds for 4DVLM.
+            </p>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</section>
-<!-- End DynAction4D Dataset Section -->
+    </section>
 
-<!-- Methodology Section -->
-<section class="section is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Methodology</h2>
-        <div class="content has-text-justified">
-          <p>
-            Our framework features a two-stage training strategy to bridge 4D scenes (dynamic point clouds) and natural language:
-          </p>
-          <ol>
-            <li><strong>Stage 1: Contrastive Language–4D Pre-training (CL4D)</strong><br>
-                A Spatio-Temporal Vision Encoder ($V_{st}$) operates directly on dynamic point clouds $(x,y,z,t)$. It comprises a frame-level Pointnet Point Encoder ($PE$), a Spatial Transformer ($V_s$) modeling global spatial relationships within each frame, and a Temporal Transformer ($V_t$) modeling inter-frame temporal dependencies. These 4D visual embeddings are aligned with text embeddings from a Text Encoder ($TE$) using a symmetric cross-entropy objective.
-            </li>
-            <li><strong>Stage 2: 4D Large Vision-Language Model (4DVLM)</strong><br>
-                The pre-trained $V_{st}$ serves as a frozen foundational encoder. Projected 4D visual tokens are fused with Vicuna-7B (LLaVA architecture) to perform complex spatial, temporal, and action-based reasoning over dynamic environments, outputting descriptive language generation.
-            </li>
-          </ol>
+    <!-- DynAction4D Dataset Card -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="apple-card fade-on-scroll">
+          <h2 class="title is-3">DynAction4D Dataset</h2>
+          <div class="content">
+            <p>
+              To facilitate Language–4D representation learning, we introduce <strong>DynAction4D</strong>, a large-scale dynamic human action point cloud dataset. DynAction4D consists of four distinct segments, each capturing unique dynamic scenarios with paired natural language descriptions:
+            </p>
+            <ul>
+              <li><strong>HumanOnly:</strong> Captures a wide variety of human-only actions (walking, jumping, dancing, etc.) across diverse environments, featuring 23k training and 4k testing sequences.</li>
+              <li><strong>ObjInteractions:</strong> Focuses on human actions involving object interactions, derived from Humoto. Includes 73 objects and 736 distinct interaction types.</li>
+              <li><strong>Cluttered:</strong> Places human characters performing various actions in environments cluttered with multiple objects at varying placements and density conditions.</li>
+              <li><strong>4D-VQA:</strong> Specifically built for evaluating downstream 4D spatial and temporal reasoning capabilities, generated by prompting Gemini on Unity-rendered video sequences.</li>
+            </ul>
+          </div>
+          
+          <!-- Dataset Pipeline Figure -->
+          <div class="media-box has-text-centered">
+            <img src="static/images/data_generation_pipeline.png" alt="DynAction4D Generation Pipeline" loading="lazy">
+            <p class="subtitle is-6">Overview of the DynAction4D data generation pipeline.</p>
+          </div>
+
+          <!-- Dataset Samples Side-by-Side -->
+          <div class="columns is-centered" style="margin-top: 15px;">
+            <div class="column is-half has-text-centered">
+              <div class="media-box">
+                <img src="static/images/HumanML_dataset_samples.png" alt="HumanOnly Samples" loading="lazy">
+                <p class="subtitle is-6">(a) DynAction4D-HumanOnly samples.</p>
+              </div>
+            </div>
+            <div class="column is-half has-text-centered">
+              <div class="media-box">
+                <img src="static/images/Humoto_dataset_samples.png" alt="ObjInteractions Samples" loading="lazy">
+                <p class="subtitle is-6">(b) DynAction4D-ObjInteractions samples.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-        <div class="has-text-centered" style="margin-top: 20px;">
-          <img src="static/images/methodology.png" alt="CL4D Framework Overview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 10px;" loading="lazy">
-          <p class="subtitle is-6">Overview of the CL4D and 4DVLM framework architecture.</p>
-        </div>
-
       </div>
-    </div>
-  </div>
-</section>
-<!-- End Methodology Section -->
+    </section>
 
-<!-- Results Section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results & Evaluation</h2>
-        
-        <h3 class="title is-4">1. Motion-Text Retrieval Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            We adapt prior state-of-the-art 4D encoders using the same contrastive pre-training objective. CL4D consistently outperforms all methods across the three segments of DynAction4D and the real-world RH20T benchmark, showing up to <strong>~16.75% R@1 improvement</strong>.
-          </p>
+    <!-- Methodology Section -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="apple-card fade-on-scroll">
+          <h2 class="title is-3">Methodology</h2>
+          <div class="content">
+            <p>
+              Our framework features a two-stage training strategy to bridge 4D scenes (dynamic point clouds) and natural language:
+            </p>
+            <ol>
+              <li><strong>Stage 1: Contrastive Language–4D Pre-training (CL4D)</strong><br>
+                  A Spatio-Temporal Vision Encoder (<i>V</i><sub>st</sub>) operates directly on dynamic point clouds (<i>x</i>, <i>y</i>, <i>z</i>, <i>t</i>). It comprises a frame-level Pointnet Point Encoder (<i>PE</i>), a Spatial Transformer (<i>V</i><sub>s</sub>) modeling global spatial relationships within each frame, and a Temporal Transformer (<i>V</i><sub>t</sub>) modeling inter-frame temporal dependencies. These 4D visual embeddings are aligned with text embeddings from a Text Encoder (<i>TE</i>) using a symmetric cross-entropy objective.
+              </li>
+              <li><strong>Stage 2: 4D Large Vision-Language Model (4DVLM)</strong><br>
+                  The pre-trained <i>V</i><sub>st</sub> serves as a frozen foundational encoder. Projected 4D visual tokens are fused with Vicuna-7B (LLaVA architecture) to perform complex spatial, temporal, and action-based reasoning over dynamic environments, outputting descriptive language generation.
+              </li>
+            </ol>
+          </div>
+
+          <div class="media-box has-text-centered">
+            <img src="static/images/methodology.png" alt="CL4D Framework Overview" loading="lazy">
+            <p class="subtitle is-6">Overview of the CL4D and 4DVLM framework architecture.</p>
+          </div>
+
         </div>
-
-        <!-- Table 1: Retrieval Results -->
-        <div class="table-container" style="margin-bottom: 30px;">
-          <table class="table is-striped is-hoverable is-fullwidth" style="font-size: 0.95rem;">
-            <thead>
-              <tr style="background-color: #f5f5f5;">
-                <th rowspan="2">Dataset Segment</th>
-                <th rowspan="2">Method</th>
-                <th colspan="2" class="has-text-centered">Text-to-Motion Retrieval (R@1 &uarr;)</th>
-                <th colspan="2" class="has-text-centered">Motion-to-Text Retrieval (R@1 &uarr;)</th>
-              </tr>
-              <tr style="background-color: #f5f5f5;">
-                <th class="has-text-centered">Batch</th>
-                <th class="has-text-centered">Global</th>
-                <th class="has-text-centered">Batch</th>
-                <th class="has-text-centered">Global</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="4" style="vertical-align: middle;"><strong>DynAction4D-HumanOnly</strong></td>
-                <td>P4Transformer</td>
-                <td class="has-text-centered">53.57%</td>
-                <td class="has-text-centered">3.66%</td>
-                <td class="has-text-centered">58.05%</td>
-                <td class="has-text-centered">5.33%</td>
-              </tr>
-              <tr>
-                <td>PST-Transformer</td>
-                <td class="has-text-centered">49.09%</td>
-                <td class="has-text-centered">2.69%</td>
-                <td class="has-text-centered">51.73%</td>
-                <td class="has-text-centered">3.34%</td>
-              </tr>
-              <tr>
-                <td>Motion PointNet</td>
-                <td class="has-text-centered">51.91%</td>
-                <td class="has-text-centered">2.34%</td>
-                <td class="has-text-centered">55.78%</td>
-                <td class="has-text-centered">3.13%</td>
-              </tr>
-              <tr style="font-weight: bold; background-color: #ebf5ff;">
-                <td>CL4D (Ours)</td>
-                <td class="has-text-centered">70.32%</td>
-                <td class="has-text-centered">8.07%</td>
-                <td class="has-text-centered">68.62%</td>
-                <td class="has-text-centered">8.02%</td>
-              </tr>
-              
-              <tr>
-                <td rowspan="4" style="vertical-align: middle; border-top: 2px solid #dbdbdb;"><strong>DynAction4D-ObjInteractions</strong></td>
-                <td style="border-top: 2px solid #dbdbdb;">P4Transformer</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">26.55%</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">5.94%</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">24.93%</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">7.31%</td>
-              </tr>
-              <tr>
-                <td>PST-Transformer</td>
-                <td class="has-text-centered">30.37%</td>
-                <td class="has-text-centered">8.22%</td>
-                <td class="has-text-centered">25.50%</td>
-                <td class="has-text-centered">7.31%</td>
-              </tr>
-              <tr>
-                <td>Motion PointNet</td>
-                <td class="has-text-centered">41.37%</td>
-                <td class="has-text-centered">12.33%</td>
-                <td class="has-text-centered">36.18%</td>
-                <td class="has-text-centered">11.87%</td>
-              </tr>
-              <tr style="font-weight: bold; background-color: #ebf5ff;">
-                <td>CL4D (Ours)</td>
-                <td class="has-text-centered">49.40%</td>
-                <td class="has-text-centered">23.29%</td>
-                <td class="has-text-centered">46.97%</td>
-                <td class="has-text-centered">22.37%</td>
-              </tr>
-
-              <tr>
-                <td rowspan="3" style="vertical-align: middle; border-top: 2px solid #dbdbdb;"><strong>DynAction4D-Cluttered</strong></td>
-                <td style="border-top: 2px solid #dbdbdb;">PST-Transformer</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">30.86%</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">0.90%</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">33.29%</td>
-                <td class="has-text-centered" style="border-top: 2px solid #dbdbdb;">0.93%</td>
-              </tr>
-              <tr>
-                <td>Motion PointNet</td>
-                <td class="has-text-centered">41.71%</td>
-                <td class="has-text-centered">1.23%</td>
-                <td class="has-text-centered">43.24%</td>
-                <td class="has-text-centered">1.53%</td>
-              </tr>
-              <tr style="font-weight: bold; background-color: #ebf5ff;">
-                <td>CL4D (Ours)</td>
-                <td class="has-text-centered">55.07%</td>
-                <td class="has-text-centered">3.11%</td>
-                <td class="has-text-centered">51.94%</td>
-                <td class="has-text-centered">2.71%</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3 class="title is-4" style="margin-top: 30px;">2. Visual Question Answering (VQA) Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            For a fair comparison with existing video-based VLMs that cannot process raw point clouds directly, we render the 4D point clouds into mesh videos. Equipped with a foundational geometry-aware encoder, our <strong>4DVLM</strong> outperforms frontier video models across all metrics, validating the importance of 3D spatial grounding.
-          </p>
-        </div>
-
-        <!-- Table 2: VQA Results -->
-        <div class="table-container">
-          <table class="table is-striped is-hoverable is-fullwidth" style="font-size: 0.95rem;">
-            <thead>
-              <tr style="background-color: #f5f5f5;">
-                <th>Method</th>
-                <th class="has-text-centered">BLEU &uarr;</th>
-                <th class="has-text-centered">ROUGE-1 (F1) &uarr;</th>
-                <th class="has-text-centered">ROUGE-2 (F1) &uarr;</th>
-                <th class="has-text-centered">ROUGE-L (F1) &uarr;</th>
-                <th class="has-text-centered">METEOR &uarr;</th>
-                <th class="has-text-centered">BERTScore F1 &uarr;</th>
-                <th class="has-text-centered">SimCSE &uarr;</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>VideoLLaMA 3</td>
-                <td class="has-text-centered">0.0437</td>
-                <td class="has-text-centered">0.3382</td>
-                <td class="has-text-centered">0.1174</td>
-                <td class="has-text-centered">0.2951</td>
-                <td class="has-text-centered">0.2481</td>
-                <td class="has-text-centered">0.4317</td>
-                <td class="has-text-centered">0.8158</td>
-              </tr>
-              <tr>
-                <td>Gemini 3.0 Flash</td>
-                <td class="has-text-centered">0.0447</td>
-                <td class="has-text-centered">0.3389</td>
-                <td class="has-text-centered">0.1156</td>
-                <td class="has-text-centered">0.2812</td>
-                <td class="has-text-centered">0.2673</td>
-                <td class="has-text-centered">0.4057</td>
-                <td class="has-text-centered">0.8009</td>
-              </tr>
-              <tr>
-                <td>Gemini 3.1 Pro</td>
-                <td class="has-text-centered">0.0300</td>
-                <td class="has-text-centered">0.2763</td>
-                <td class="has-text-centered">0.0923</td>
-                <td class="has-text-centered">0.2427</td>
-                <td class="has-text-centered">0.1933</td>
-                <td class="has-text-centered">0.3736</td>
-                <td class="has-text-centered">0.7690</td>
-              </tr>
-              <tr>
-                <td>GPT-5</td>
-                <td class="has-text-centered">0.0184</td>
-                <td class="has-text-centered">0.1935</td>
-                <td class="has-text-centered">0.0403</td>
-                <td class="has-text-centered">0.1612</td>
-                <td class="has-text-centered">0.1347</td>
-                <td class="has-text-centered">0.3191</td>
-                <td class="has-text-centered">0.7432</td>
-              </tr>
-              <tr style="font-weight: bold; background-color: #ebf5ff;">
-                <td>4DVLM (Ours)</td>
-                <td class="has-text-centered">0.0729</td>
-                <td class="has-text-centered">0.3857</td>
-                <td class="has-text-centered">0.1563</td>
-                <td class="has-text-centered">0.3324</td>
-                <td class="has-text-centered">0.3152</td>
-                <td class="has-text-centered">0.4459</td>
-                <td class="has-text-centered">0.8189</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Qualitative results Q&A -->
-        <h3 class="title is-4" style="margin-top: 30px;">3. Qualitative Analysis</h3>
-        <div class="has-text-centered">
-          <img src="static/images/qna_diagram_new.png" alt="4DVLM Qualitative VQA Outputs" style="max-width: 100%; height: auto; margin-bottom: 10px;" loading="lazy">
-          <p class="subtitle is-6">Comparison of generated outputs from our 4DVLM against Video VLMs on sample DynAction4D VQA instances.</p>
-        </div>
-
       </div>
-    </div>
-  </div>
-</section>
-<!-- Paper PDF -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Paper PDF</h2>
+    </section>
 
-      <iframe src="static/pdfs/paper.pdf" width="100%" height="800px" style="border: none;">
-      </iframe>
-        
-    </div>
-  </div>
-</section>
-<!--End Paper PDF -->
+    <!-- Results Section -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="apple-card fade-on-scroll">
+          <h2 class="title is-3">Results & Evaluation</h2>
+          
+          <h3 class="title is-4">1. Motion-Text Retrieval Results</h3>
+          <div class="content">
+            <p>
+              We adapt prior state-of-the-art 4D encoders using the same contrastive pre-training objective. CL4D consistently outperforms all methods across the three segments of DynAction4D and the real-world RH20T benchmark, showing up to <strong>~16.75% R@1 improvement</strong>.
+            </p>
+          </div>
 
-<!--BibTex citation -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <div class="bibtex-header">
-      <h2 class="title">BibTeX</h2>
-      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-        <i class="fas fa-copy"></i>
-        <span class="copy-text">Copy</span>
-      </button>
-    </div>
-    <pre id="bibtex-code"><code>@article{hewagamage2026cl4d,
+          <!-- Table 1: Retrieval Results -->
+          <div class="table-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th rowspan="2">Dataset Segment</th>
+                  <th rowspan="2">Method</th>
+                  <th colspan="2" class="has-text-centered">Text-to-Motion Retrieval (R@1 &uarr;)</th>
+                  <th colspan="2" class="has-text-centered">Motion-to-Text Retrieval (R@1 &uarr;)</th>
+                </tr>
+                <tr>
+                  <th class="has-text-centered">Batch</th>
+                  <th class="has-text-centered">Global</th>
+                  <th class="has-text-centered">Batch</th>
+                  <th class="has-text-centered">Global</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4" style="vertical-align: middle;"><strong>DynAction4D-HumanOnly</strong></td>
+                  <td>P4Transformer</td>
+                  <td class="has-text-centered">53.57%</td>
+                  <td class="has-text-centered">3.66%</td>
+                  <td class="has-text-centered">58.05%</td>
+                  <td class="has-text-centered">5.33%</td>
+                </tr>
+                <tr>
+                  <td>PST-Transformer</td>
+                  <td class="has-text-centered">49.09%</td>
+                  <td class="has-text-centered">2.69%</td>
+                  <td class="has-text-centered">51.73%</td>
+                  <td class="has-text-centered">3.34%</td>
+                </tr>
+                <tr>
+                  <td>Motion PointNet</td>
+                  <td class="has-text-centered">51.91%</td>
+                  <td class="has-text-centered">2.34%</td>
+                  <td class="has-text-centered">55.78%</td>
+                  <td class="has-text-centered">3.13%</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>CL4D (Ours)</strong></td>
+                  <td class="has-text-centered">70.32%</td>
+                  <td class="has-text-centered">8.07%</td>
+                  <td class="has-text-centered">68.62%</td>
+                  <td class="has-text-centered">8.02%</td>
+                </tr>
+                
+                <tr>
+                  <td rowspan="4" style="vertical-align: middle; border-top: 2px solid var(--border-color);"><strong>DynAction4D-ObjInteractions</strong></td>
+                  <td style="border-top: 2px solid var(--border-color);">P4Transformer</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">26.55%</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">5.94%</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">24.93%</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">7.31%</td>
+                </tr>
+                <tr>
+                  <td>PST-Transformer</td>
+                  <td class="has-text-centered">30.37%</td>
+                  <td class="has-text-centered">8.22%</td>
+                  <td class="has-text-centered">25.50%</td>
+                  <td class="has-text-centered">7.31%</td>
+                </tr>
+                <tr>
+                  <td>Motion PointNet</td>
+                  <td class="has-text-centered">41.37%</td>
+                  <td class="has-text-centered">12.33%</td>
+                  <td class="has-text-centered">36.18%</td>
+                  <td class="has-text-centered">11.87%</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>CL4D (Ours)</strong></td>
+                  <td class="has-text-centered">49.40%</td>
+                  <td class="has-text-centered">23.29%</td>
+                  <td class="has-text-centered">46.97%</td>
+                  <td class="has-text-centered">22.37%</td>
+                </tr>
+
+                <tr>
+                  <td rowspan="3" style="vertical-align: middle; border-top: 2px solid var(--border-color);"><strong>DynAction4D-Cluttered</strong></td>
+                  <td style="border-top: 2px solid var(--border-color);">PST-Transformer</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">30.86%</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">0.90%</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">33.29%</td>
+                  <td class="has-text-centered" style="border-top: 2px solid var(--border-color);">0.93%</td>
+                </tr>
+                <tr>
+                  <td>Motion PointNet</td>
+                  <td class="has-text-centered">41.71%</td>
+                  <td class="has-text-centered">1.23%</td>
+                  <td class="has-text-centered">43.24%</td>
+                  <td class="has-text-centered">1.53%</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>CL4D (Ours)</strong></td>
+                  <td class="has-text-centered">55.07%</td>
+                  <td class="has-text-centered">3.11%</td>
+                  <td class="has-text-centered">51.94%</td>
+                  <td class="has-text-centered">2.71%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="title is-4">2. Visual Question Answering (VQA) Results</h3>
+          <div class="content">
+            <p>
+              For a fair comparison with existing video-based VLMs that cannot process raw point clouds directly, we render the 4D point clouds into mesh videos. Equipped with a foundational geometry-aware encoder, our <strong>4DVLM</strong> outperforms frontier video models across all metrics, validating the importance of 3D spatial grounding.
+            </p>
+          </div>
+
+          <!-- Table 2: VQA Results -->
+          <div class="table-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th class="has-text-centered">BLEU &uarr;</th>
+                  <th class="has-text-centered">ROUGE-1 (F1) &uarr;</th>
+                  <th class="has-text-centered">ROUGE-2 (F1) &uarr;</th>
+                  <th class="has-text-centered">ROUGE-L (F1) &uarr;</th>
+                  <th class="has-text-centered">METEOR &uarr;</th>
+                  <th class="has-text-centered">BERTScore F1 &uarr;</th>
+                  <th class="has-text-centered">SimCSE &uarr;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>VideoLLaMA 3</td>
+                  <td class="has-text-centered">0.0437</td>
+                  <td class="has-text-centered">0.3382</td>
+                  <td class="has-text-centered">0.1174</td>
+                  <td class="has-text-centered">0.2951</td>
+                  <td class="has-text-centered">0.2481</td>
+                  <td class="has-text-centered">0.4317</td>
+                  <td class="has-text-centered">0.8158</td>
+                </tr>
+                <tr>
+                  <td>Gemini 3.0 Flash</td>
+                  <td class="has-text-centered">0.0447</td>
+                  <td class="has-text-centered">0.3389</td>
+                  <td class="has-text-centered">0.1156</td>
+                  <td class="has-text-centered">0.2812</td>
+                  <td class="has-text-centered">0.2673</td>
+                  <td class="has-text-centered">0.4057</td>
+                  <td class="has-text-centered">0.8009</td>
+                </tr>
+                <tr>
+                  <td>Gemini 3.1 Pro</td>
+                  <td class="has-text-centered">0.0300</td>
+                  <td class="has-text-centered">0.2763</td>
+                  <td class="has-text-centered">0.0923</td>
+                  <td class="has-text-centered">0.2427</td>
+                  <td class="has-text-centered">0.1933</td>
+                  <td class="has-text-centered">0.3736</td>
+                  <td class="has-text-centered">0.7690</td>
+                </tr>
+                <tr>
+                  <td>GPT-5</td>
+                  <td class="has-text-centered">0.0184</td>
+                  <td class="has-text-centered">0.1935</td>
+                  <td class="has-text-centered">0.0403</td>
+                  <td class="has-text-centered">0.1612</td>
+                  <td class="has-text-centered">0.1347</td>
+                  <td class="has-text-centered">0.3191</td>
+                  <td class="has-text-centered">0.7432</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>4DVLM (Ours)</strong></td>
+                  <td class="has-text-centered">0.0729</td>
+                  <td class="has-text-centered">0.3857</td>
+                  <td class="has-text-centered">0.1563</td>
+                  <td class="has-text-centered">0.3324</td>
+                  <td class="has-text-centered">0.3152</td>
+                  <td class="has-text-centered">0.4459</td>
+                  <td class="has-text-centered">0.8189</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Qualitative results Q&A -->
+          <h3 class="title is-4">3. Qualitative Analysis</h3>
+          <div class="media-box has-text-centered">
+            <img src="static/images/qna_diagram_new.png" alt="4DVLM Qualitative VQA Outputs" loading="lazy">
+            <p class="subtitle is-6">Comparison of generated outputs from our 4DVLM against Video VLMs on sample DynAction4D VQA instances.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BibTeX Citation Section -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop">
+        <div class="apple-card fade-on-scroll">
+          <div class="bibtex-header">
+            <h2 class="title is-3" style="margin-bottom: 0 !important;">BibTeX</h2>
+            <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+              <i class="fas fa-copy"></i>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+          <pre id="bibtex-code"><code>@article{hewagamage2026cl4d,
   title={CL4D: Contrastive Language--4D Pretraining for Vision-Language Reasoning in Dynamic Scenes},
   author={Hewagamage, Kumal and Senavirathne, Isuranga and Amarasinghe, Sasika and Gallella, Hasitha and Weerakoon, Dulanga and Subbaraju, Vigneshwaran and Rodrigo, Ranga},
   journal={European Conference on Computer Vision (ECCV)},
   year={2026}
 }</code></pre>
-  </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
         </div>
       </div>
+    </section>
+
+  </main>
+
+  <!-- Apple Minimalist Footer -->
+  <footer class="footer">
+    <div class="container is-max-desktop">
+      <div class="content">
+        <p>
+          This page was built using Apple UI design standards. Adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
