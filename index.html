@@ -97,6 +97,7 @@
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   <script defer src="static/js/index.js"></script>
   
   <!-- Structured Data for Academic Papers -->
@@ -352,6 +353,25 @@
             </p>
           </div>
 
+          <!-- Chart: Retrieval Results Visualization -->
+          <div class="chart-section" id="retrieval-chart-section">
+            <div class="chart-header">
+              <h4 class="chart-title">DynAction4D Segments · R@1↑ (Batch)</h4>
+              <div class="chart-toggle-group">
+                <button class="chart-toggle-btn active" data-metric="t2m" onclick="switchChartMetric('t2m')">
+                  <span class="toggle-dot"></span>Text → Motion
+                </button>
+                <button class="chart-toggle-btn" data-metric="m2t" onclick="switchChartMetric('m2t')">
+                  <span class="toggle-dot"></span>Motion → Text
+                </button>
+              </div>
+            </div>
+            <div class="chart-canvas-wrapper">
+              <canvas id="retrievalChart" aria-label="Bar chart showing R@1 retrieval performance across DynAction4D segments"></canvas>
+            </div>
+            <div class="chart-legend" id="chartLegend"></div>
+          </div>
+
           <!-- Table 1: Retrieval Results -->
           <div class="table-container">
             <table class="table">
@@ -567,14 +587,22 @@
 
   </main>
 
-  <!-- Apple Minimalist Footer -->
+  <!-- Institutional Footer Logos -->
   <footer class="footer">
     <div class="container is-max-desktop">
-      <div class="content">
-        <p>
-          This page was built using Apple UI design standards. Adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-          Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-        </p>
+      <div class="footer-logos">
+        <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" class="footer-logo-item uom-logo">
+          <img src="logos/uom-light.png" alt="University of Moratuwa" loading="lazy">
+        </a>
+        <a href="https://ent.uom.lk/" target="_blank" rel="noopener noreferrer" class="footer-logo-item entc-logo">
+          <img src="logos/entc-light.svg" alt="Department of Electronic and Telecommunication Engineering" loading="lazy">
+        </a>
+        <a href="https://m3s.mit.edu/" target="_blank" rel="noopener noreferrer" class="footer-logo-item smart-logo">
+          <img src="logos/SMART_Logo_new.png" alt="SMART Centre" loading="lazy">
+        </a>
+        <a href="https://www.a-star.edu.sg/" target="_blank" rel="noopener noreferrer" class="footer-logo-item astar-logo">
+          <img src="logos/A_STAR_logo.png" alt="A*STAR Singapore" loading="lazy">
+        </a>
       </div>
     </div>
   </footer>

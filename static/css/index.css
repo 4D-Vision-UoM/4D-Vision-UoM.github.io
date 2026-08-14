@@ -422,6 +422,169 @@ body {
   color: var(--accent) !important;
 }
 
+/* Chart Visualization Section */
+.chart-section {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  transition: var(--transition-smooth);
+}
+
+.chart-section:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.chart-title {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.chart-toggle-group {
+  display: flex;
+  gap: var(--space-xs);
+  background: var(--bg-primary);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.chart-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  min-height: 36px;
+  white-space: nowrap;
+}
+
+.chart-toggle-btn:hover {
+  color: var(--text-primary);
+}
+
+.chart-toggle-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.5;
+  transition: var(--transition-fast);
+}
+
+.chart-toggle-btn.active .toggle-dot {
+  opacity: 1;
+  background: #ffffff;
+}
+
+.chart-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 520px;
+  min-height: 480px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-sm) var(--space-sm);
+  border: 1px solid var(--border-color);
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.chart-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: default;
+  transition: var(--transition-fast);
+}
+
+.chart-legend-item:hover {
+  color: var(--text-primary);
+}
+
+.chart-legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.chart-legend-item.is-ours .chart-legend-swatch {
+  box-shadow: 0 0 0 2px rgba(118, 171, 47, 0.25);
+}
+
+.chart-legend-item.is-ours {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chart-canvas-wrapper {
+    max-height: 350px;
+    padding: var(--space-sm) var(--space-xs) var(--space-xs);
+  }
+
+  .chart-toggle-group {
+    align-self: stretch;
+  }
+
+  .chart-toggle-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
+  .chart-legend {
+    gap: var(--space-md);
+  }
+}
+
 /* BibTeX Section */
 pre {
   background: var(--bg-secondary) !important;
@@ -526,7 +689,8 @@ code {
   visibility: visible;
 }
 
-/* Footer */
+/* Footer & Logo Row */
+/* Footer & Single Line Logo Row */
 .footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
@@ -534,20 +698,50 @@ code {
   margin-top: var(--space-2xl);
 }
 
-.footer .content {
-  font-size: 14px;
-  color: var(--text-secondary);
-  text-align: center;
+.footer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-.footer a {
-  color: var(--accent);
-  text-decoration: none;
+.footer-logo-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   transition: var(--transition-fast);
 }
 
-.footer a:hover {
-  text-decoration: underline;
+/* Baseline size for SMART */
+.footer-logo-item img {
+  height: 52px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  transition: var(--transition-fast);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.04));
+}
+
+/* ENTC and A*STAR logos slightly bigger */
+.footer-logo-item.entc-logo img,
+.footer-logo-item.astar-logo img {
+  height: 66px;
+  max-width: 200px;
+}
+
+/* UoM logo distinctly largest */
+.footer-logo-item.uom-logo img {
+  height: 94px;
+  max-width: 250px;
+}
+
+.footer-logo-item:hover img {
+  transform: scale(1.06);
 }
 
 /* Micro-Animations: Fade Up Entrance */
