@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://4d-vision-uom.github.io/sitemap.xml
