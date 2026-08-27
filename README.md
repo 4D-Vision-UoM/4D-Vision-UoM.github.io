@@ -3,6 +3,7 @@
 TODO
 - Add the teaser video 
 - Mention about the MotionImage concept
+- Add ECCV logo in the footer
 
 > **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
 
