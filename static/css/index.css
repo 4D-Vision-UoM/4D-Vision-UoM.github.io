@@ -711,7 +711,7 @@ code {
 /* Footer & Logo Row */
 /* Footer & Single Line Logo Row */
 .footer {
-  background: var(--bg-secondary);
+  background: #ffffff;
   border-top: 1px solid var(--border-color);
   padding: var(--space-xl) var(--space-md);
   margin-top: var(--space-2xl);
@@ -719,13 +719,22 @@ code {
 
 .footer-logos {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 36px;
-  flex-wrap: nowrap;
   width: 100%;
-  max-width: 1050px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.footer-logos-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer-logo-item {
@@ -758,6 +767,15 @@ code {
   height: 94px;
   max-width: 250px;
 }
+
+/* Make MIT and LK Domain logos larger */
+.footer-logo-item.mit-logo img,
+.footer-logo-item.lk-domain-logo img {
+  height: 75px;
+  max-width: 220px;
+}
+
+
 
 .footer-logo-item:hover img {
   transform: scale(1.06);

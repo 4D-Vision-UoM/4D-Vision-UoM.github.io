@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-99WXJTCZTK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-99WXJTCZTK');
@@ -99,10 +99,8 @@
     et al.</title>
 
   <!-- Favicon and App Icons -->
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌏</text></svg>">
-  <link rel="apple-touch-icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌏</text></svg>">
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/favicon.png">
 
   <!-- Critical CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -352,7 +350,7 @@
                 <span class="author-block" itemscope itemtype="https://schema.org/Person">
                   <a href="https://scholar.google.com/citations?user=a-XmypoAAAAJ&amp;hl=en" target="_blank"
                     rel="author noopener noreferrer" itemprop="url"><span itemprop="name">Vigneshwaran
-                      Subbaraju</span></a><sup>3†</sup>,
+                      Subbaraju</span></a><sup>3,4†</sup>,
                 </span>
                 <span class="author-block" itemscope itemtype="https://schema.org/Person">
                   <a href="https://scholar.google.com/citations?user=YaEJbvYAAAAJ&amp;hl=en" target="_blank"
@@ -367,6 +365,7 @@
                   Singapore</span><br>
                 <span class="author-block"><sup>3</sup>Agency for Science, Technology and Research (A*STAR),
                   Singapore</span><br>
+                <span class="author-block"><sup>4</sup>CNRS@CREATE, Singapore</span><br>
                 <span class="publication-venue">ECCV 2026</span>
                 <div class="eql-cntrb"><sup>*</sup>Indicates Equal Contribution &nbsp;&nbsp; <sup>†</sup>Indicates Joint
                   Supervision</div>
@@ -413,7 +412,7 @@
     <section class="teaser">
       <div class="container is-max-desktop">
         <div class="teaser-card fade-on-scroll">
-          <img src="static/images/teaser.png" alt="CL4D Framework Overview" loading="lazy">
+          <img src="static/images/teaser.webp" alt="CL4D Framework Overview" loading="lazy">
           <p class="teaser-caption">
             <strong>Overview of the Language–4D framework:</strong> We introduce CL4D, a contrastive pre-training
             paradigm that bridges the gap between 4D sequences (dynamic point clouds) and natural language. <strong>(A)
@@ -488,7 +487,7 @@
 
           <!-- Dataset Pipeline Figure -->
           <div class="media-box has-text-centered">
-            <img src="static/images/data_generation_pipeline.png" alt="DynAction4D Generation Pipeline" loading="lazy">
+            <img src="static/images/data_generation_pipeline.webp" alt="DynAction4D Generation Pipeline" loading="lazy">
             <p class="subtitle is-6">Overview of the DynAction4D data generation pipeline.</p>
           </div>
 
@@ -496,13 +495,13 @@
           <div class="columns is-centered" style="margin-top: 15px;">
             <div class="column is-half has-text-centered">
               <div class="media-box">
-                <img src="static/images/HumanML_dataset_samples.png" alt="HumanOnly Samples" loading="lazy">
+                <img src="static/images/HumanML_dataset_samples.webp" alt="HumanOnly Samples" loading="lazy">
                 <p class="subtitle is-6">(a) DynAction4D-HumanOnly samples.</p>
               </div>
             </div>
             <div class="column is-half has-text-centered">
               <div class="media-box">
-                <img src="static/images/Humoto_dataset_samples.png" alt="ObjInteractions Samples" loading="lazy">
+                <img src="static/images/Humoto_dataset_samples.webp" alt="ObjInteractions Samples" loading="lazy">
                 <p class="subtitle is-6">(b) DynAction4D-ObjInteractions samples.</p>
               </div>
             </div>
@@ -540,7 +539,7 @@
           </div>
 
           <div class="media-box has-text-centered">
-            <img src="static/images/methodology.png" alt="CL4D Framework Overview" loading="lazy">
+            <img src="static/images/methodology.webp" alt="CL4D Framework Overview" loading="lazy">
             <p class="subtitle is-6">Overview of the CL4D and 4DVLM framework architecture.</p>
           </div>
 
@@ -774,7 +773,7 @@
           <!-- Qualitative results Q&A -->
           <h3 class="title is-4">3. Qualitative Analysis</h3>
           <div class="media-box has-text-centered">
-            <img src="static/images/qna_diagram_new.png" alt="4DVLM Qualitative VQA Outputs" loading="lazy">
+            <img src="static/images/qna_diagram_new.webp" alt="4DVLM Qualitative VQA Outputs" loading="lazy">
             <p class="subtitle is-6">Comparison of generated outputs from our 4DVLM against Video VLMs on sample
               DynAction4D VQA instances.</p>
           </div>
@@ -819,22 +818,50 @@
 
   <!-- Institutional Footer Logos -->
   <footer class="footer">
-    <div class="container is-max-desktop">
+    <div class="container">
       <div class="footer-logos">
-        <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" class="footer-logo-item uom-logo">
-          <img src="logos/uom-light.png" alt="University of Moratuwa" loading="lazy">
-        </a>
-        <a href="https://ent.uom.lk/" target="_blank" rel="noopener noreferrer" class="footer-logo-item entc-logo">
-          <img src="logos/entc-light.svg" alt="Department of Electronic and Telecommunication Engineering"
-            loading="lazy">
-        </a>
-        <a href="https://m3s.mit.edu/" target="_blank" rel="noopener noreferrer" class="footer-logo-item smart-logo">
-          <img src="logos/SMART_Logo_new.png" alt="SMART Centre" loading="lazy">
-        </a>
-        <a href="https://www.a-star.edu.sg/" target="_blank" rel="noopener noreferrer"
-          class="footer-logo-item astar-logo">
-          <img src="logos/A_STAR_logo.png" alt="A*STAR Singapore" loading="lazy">
-        </a>
+        <div class="footer-logos-row">
+          <a href="https://uom.lk/" target="_blank" rel="noopener noreferrer" class="footer-logo-item uom-logo">
+            <img src="logos/uom-light.png" alt="University of Moratuwa" loading="lazy">
+          </a>
+          <a href="https://ent.uom.lk/" target="_blank" rel="noopener noreferrer" class="footer-logo-item entc-logo">
+            <img src="logos/entc-light.svg" alt="Department of Electronic and Telecommunication Engineering" loading="lazy">
+          </a>
+          <a href="https://www.a-star.edu.sg/" target="_blank" rel="noopener noreferrer"
+            class="footer-logo-item astar-logo">
+            <img src="logos/A_STAR_logo.webp" alt="A*STAR Singapore" loading="lazy">
+          </a>
+          <a href="https://m3s.mit.edu/" target="_blank" rel="noopener noreferrer" class="footer-logo-item m3s-logo">
+            <img src="logos/m3s-light.svg" alt="M3S" loading="lazy">
+          </a>
+          <a href="https://smart.mit.edu/" target="_blank" rel="noopener noreferrer"
+            class="footer-logo-item smart-logo">
+            <img src="logos/SMART_Logo_new.webp" alt="SMART Centre" loading="lazy">
+          </a>
+        </div>
+        <div class="footer-logos-row">
+          <a href="https://web.mit.edu/" target="_blank" rel="noopener noreferrer" class="footer-logo-item mit-logo">
+            <img src="logos/MIT_logo.webp" alt="MIT" loading="lazy">
+          </a>
+          <a href="https://www.nrf.gov.sg/" target="_blank" rel="noopener noreferrer" class="footer-logo-item nrf-logo">
+            <img src="logos/singapore_NRF_logo.webp" alt="NRF Singapore" loading="lazy">
+          </a>
+          <a href="https://www.create.edu.sg/" target="_blank" rel="noopener noreferrer"
+            class="footer-logo-item create-logo">
+            <img src="logos/CREATE_logo.webp" alt="CREATE" loading="lazy">
+          </a>
+          <a href="https://cnrsatcreate.sg/" target="_blank" rel="noopener noreferrer"
+            class="footer-logo-item cnrs-create-logo">
+            <img src="logos/CNRS-CREATE_logo.webp" alt="CNRS CREATE" loading="lazy">
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="footer-logo-item learn-logo">
+            <img src="logos/Learn_Logo-removebg.webp" alt="LEARN" loading="lazy">
+          </a>
+          <a href="https://www.domains.lk/" target="_blank" rel="noopener noreferrer"
+            class="footer-logo-item lk-domain-logo">
+            <img src="logos/LK_domain_registry.webp" alt="LK Domain Registry" loading="lazy">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
