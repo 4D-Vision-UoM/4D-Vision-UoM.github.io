@@ -85,8 +85,8 @@ body {
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
   transition: var(--transition-smooth);
-  padding: var(--space-xl);
-  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 
 .apple-card:hover {
@@ -254,7 +254,7 @@ body {
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
   padding: var(--space-lg);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
   overflow: hidden;
 }
 
@@ -280,7 +280,7 @@ body {
 
 /* Sections & Typography */
 .section {
-  padding: var(--space-xl) var(--space-md);
+  padding: var(--space-lg) var(--space-md);
 }
 
 .container.is-max-desktop {
